@@ -69,6 +69,6 @@ document.getElementById('erase').addEventListener('click', function () {
 function signatureDownload() {
 	var imgData = signaturePad.toDataURL("image/jpeg", 1.0);
 	var pdf = new jsPDF();
-	pdf.addImage(imgData, 'JPEG', 0, 0);
+	pdf.addImage(imgData, 'JPEG', 10, 50);
 	pdf.save("signature.pdf");
 }
