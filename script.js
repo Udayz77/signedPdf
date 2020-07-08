@@ -17,7 +17,7 @@ window.onresize = resizeCanvas;
 resizeCanvas();
 
 var signaturePad = new SignaturePad(canvas, {
-  backgroundColor: 'rgb(255, 255, 255)' // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
+  backgroundColor: 'rgb(232, 232, 232)' // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
 });
 
 document.getElementById('save-png').addEventListener('click', function () {
