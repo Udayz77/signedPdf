@@ -1,18 +1,35 @@
 <html>
 <head>
-<title>Signataure Captue with PDF</title>
+<title>Signataure Capture with PDF</title>
 </head>
+<style>
+.wrapper {
+  position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.mt-3{
+	margin-top: 3%;
+}
+.ml-2{
+	margin-left: 2%;
+}
+</style>
 <body>
-<div class="wrapper">
-  <canvas id="signature-pad" class="signature-pad" width=400 height=200></canvas>
+<div class="wrapper ml-2">
+  <canvas id="signature-pad" class="signature-pad" width='500' height='300'></canvas>
 </div>
-<button id="save-png">Save as PNG</button>
-<button id="save-jpeg">Save as JPEG</button>
-<button id="save-svg">Save as SVG</button>
-<button id="draw">Draw</button>
-<button id="erase">Erase</button>
-<button id="clear">Clear</button>
-<button onclick="signature()">Download</button>
+<div class="mt-3">
+	<button id="save-png">Save as PNG</button>
+	<button id="save-jpeg">Save as JPEG</button>
+	<button id="save-svg">Save as SVG</button>
+	<button id="draw">Draw</button>
+	<button id="erase">Erase</button>
+	<button id="clear">Clear</button>
+	<button onclick="signature()">Download</button>
+</div>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.1/jspdf.debug.js" integrity="sha256-wyNUwH3AO+4yHnbp67NfXy2dQmpe6P+8XT7YXcZhdE0=" crossorigin="anonymous"></script>
