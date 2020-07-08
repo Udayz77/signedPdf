@@ -66,7 +66,7 @@ document.getElementById('erase').addEventListener('click', function () {
   ctx.globalCompositeOperation = 'destination-out';
 });
 
-function signature() {
+function signatureDownload() {
 	var imgData = signaturePad.toDataURL("image/jpeg", 1.0);
 	var pdf = new jsPDF();
 	pdf.addImage(imgData, 'JPEG', 0, 0);
